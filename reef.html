@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reef - L'opérateur qui a tout compris</title>
+    <style>
+        :root {
+            --reef-red: #cc0000;
+            --free-grey: #333;
+            --light-grey: #f2f2f2;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        /* Barre de navigation style Free */
+        header {
+            background-color: var(--free-grey);
+            color: white;
+            padding: 10px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--reef-red);
+        }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        /* Section Forfait "Incroyable" */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(180deg, #fff 0%, var(--light-grey) 100%);
+        }
+
+        .badge {
+            background-color: var(--reef-red);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 10px 0;
+            color: #111;
+        }
+
+        .price-container {
+            margin: 30px 0;
+        }
+
+        .price {
+            font-size: 100px;
+            font-weight: 900;
+            color: var(--reef-red);
+            line-height: 1;
+        }
+
+        .price span {
+            font-size: 40px;
+            vertical-align: top;
+        }
+
+        .details {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .btn-red {
+            background-color: var(--reef-red);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .btn-red:hover {
+            background-color: #a00000;
+            transform: scale(1.05);
+        }
+
+        /* Section Box */
+        .box-section {
+            display: flex;
+            justify-content: center;
+            padding: 50px 10%;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .card .price-small {
+            font-size: 32px;
+            color: var(--reef-red);
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: #f9f9f9;
+            padding: 40px 10%;
+            border-top: 1px solid #eee;
+            color: #666;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">RE<span>E</span>F</a>
+        <nav>
+            <a href="#">Mobile</a>
+            <a href="#">Reefbox</a>
+            <a href="#">Série Limitée</a>
+            <a href="#">Espace Abonné</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="badge">SÉRIE LIMITÉE</div>
+        <h1>Le Forfait Reef illimité</h1>
+        <p class="details">Appels, SMS/MMS illimités + 250 Go en 5G/5G+</p>
+        
+        <div class="price-container">
+            <div class="price">19<span>€99</span></div>
+            <p>/mois. Sans engagement.</p>
+        </div>
+
+        <a href="#" class="btn-red">J'en profite</a>
+        <p style="margin-top: 20px; font-size: 13px; color: #888;">Prix garanti à vie. Parce qu'on a tout compris.</p>
+    </section>
+
+    <div class="box-section">
+        <div class="card">
+            <h3>Reefbox Pop</h3>
+            <p>La fibre ultra-rapide</p>
+            <div class="price-small">29€99</div>
+            <p>pendant 1 an</p>
+            <hr>
+            <p>Player TV inclus</p>
+        </div>
+        <div class="card">
+            <h3>Reefbox Ultra</h3>
+            <p>La puissance absolue</p>
+            <div class="price-small">49€99</div>
+            <p>Le top du top</p>
+            <hr>
+            <p>Netflix & Disney+ inclus</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Offres soumises à conditions. Sous réserve d'éligibilité technique. SIM : 10€. Reef SAS au capital de beaucoup d'euros.</p>
+        <p>© 2024 Reef Mobile - Inspiré par la liberté.</p>
+    </footer>
+
+</body>
+</html>
